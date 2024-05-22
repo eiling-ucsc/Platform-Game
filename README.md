@@ -12,3 +12,6 @@ Requirements:
 - Audio juice. The game must use audio effects to help communicate at least one of the following actions: jumping, moving, landing, or collecting the collectibles.
 
 Visual assets courtesy of [Kenny Assets](https://kenney.nl/assets), with gratitude.
+
+Play here:
+https://eiling12.github.io/Platform-Game/
