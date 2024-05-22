@@ -5,7 +5,8 @@ class Load extends Phaser.Scene {
 
     preload() {
         this.load.setPath("./assets/");
-
+        // Load audio
+        this.load.audio('footsteps', 'footstep_grass_000.ogg');
         // Load characters spritesheet
         this.load.atlas("platformer_characters", "tilemap-characters-packed.png", "tilemap-characters-packed.json");
 
@@ -26,6 +27,7 @@ class Load extends Phaser.Scene {
         // The multiatlas was created using TexturePacker and the Kenny
         // Particle Pack asset pack.
         this.load.multiatlas("kenny-particles", "kenny-particles.json");
+
     }
 
     create() {
@@ -33,8 +35,8 @@ class Load extends Phaser.Scene {
             key: 'walk',
             frames: this.anims.generateFrameNames('platformer_characters', {
                 prefix: "tile_",
-                start: 0,
-                end: 1,
+                start: 2,
+                end: 3,
                 suffix: ".png",
                 zeroPad: 4
             }),
@@ -46,7 +48,7 @@ class Load extends Phaser.Scene {
             key: 'idle',
             defaultTextureKey: "platformer_characters",
             frames: [
-                { frame: "tile_0000.png" }
+                { frame: "tile_0002.png" }
             ],
             repeat: -1
         });
@@ -55,7 +57,7 @@ class Load extends Phaser.Scene {
             key: 'jump',
             defaultTextureKey: "platformer_characters",
             frames: [
-                { frame: "tile_0001.png" }
+                { frame: "tile_0003.png" }
             ],
         });
 

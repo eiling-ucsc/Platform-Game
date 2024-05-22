@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="25" tilewidth="18" tileheight="18" infinite="0" nextlayerid="3" nextobjectid="47">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="48" height="25" tilewidth="18" tileheight="18" infinite="0" nextlayerid="5" nextobjectid="67">
  <editorsettings>
   <export target="platformer-level-1.tmj" format="json"/>
  </editorsettings>
@@ -235,4 +235,26 @@
 123,123,123,123,123,123,123,123,124,63,63,63,63,63,63,122,123,123,123,123,123,123,123,123,123,123,124,63,63,63,63,63,63,122,123,123,123,123,123,123,123,123,123,124,74,74,74,74
 </data>
  </layer>
+ <objectgroup id="4" name="Objects">
+  <object id="47" name="coin" gid="152" x="185.257" y="280.518" width="18" height="18"/>
+  <object id="48" name="coin" gid="152" x="211.746" y="280.518" width="18" height="18"/>
+  <object id="49" name="coin" gid="152" x="238.236" y="282.725" width="18" height="18"/>
+  <object id="50" name="coin" gid="152" x="277.97" y="192.219" width="18" height="18"/>
+  <object id="51" name="coin" gid="152" x="300.044" y="192.219" width="18" height="18"/>
+  <object id="52" name="coin" gid="152" x="319.912" y="192.219" width="18" height="18"/>
+  <object id="53" name="coin" gid="152" x="368.476" y="119.373" width="18" height="18"/>
+  <object id="54" name="coin" gid="152" x="394.965" y="119.373" width="18" height="18"/>
+  <object id="55" name="coin" gid="152" x="423.662" y="121.58" width="18" height="18"/>
+  <object id="56" name="coin" gid="152" x="558.317" y="152.485" width="18" height="18"/>
+  <object id="57" name="coin" gid="152" x="575.977" y="152.485" width="18" height="18"/>
+  <object id="58" name="coin" gid="152" x="668.69" y="119.373" width="18" height="18"/>
+  <object id="59" name="coin" gid="152" x="679.728" y="119.373" width="18" height="18"/>
+  <object id="60" name="coin" gid="152" x="697.387" y="119.373" width="18" height="18"/>
+  <object id="61" name="coin" gid="152" x="602.467" y="309.215" width="18" height="18"/>
+  <object id="62" name="coin" gid="152" x="626.749" y="311.422" width="18" height="18"/>
+  <object id="63" name="coin" gid="152" x="655.446" y="311.422" width="18" height="18"/>
+  <object id="64" name="coin" gid="152" x="675.313" y="311.422" width="18" height="18"/>
+  <object id="65" name="coin" gid="152" x="730.499" y="256.236" width="18" height="18"/>
+  <object id="66" name="coin" gid="152" x="752.574" y="256.236" width="18" height="18"/>
+ </objectgroup>
 </map>
