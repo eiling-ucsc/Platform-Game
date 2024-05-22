@@ -6,7 +6,7 @@ class Platformer extends Phaser.Scene {
     init() {
         // variables and settings
         this.ACCELERATION = 200;
-        this.DRAG = 500;    // DRAG < ACCELERATION = icy slide
+        this.DRAG = 500;    
         this.physics.world.gravity.y = 1500;
         this.JUMP_VELOCITY = -500;
         this.PARTICLE_VELOCITY = 50;
@@ -92,9 +92,9 @@ class Platformer extends Phaser.Scene {
         my.vfx.jumping.stop();
         
 
-        // camera code here
+        // Camera code here
         this.cameras.main.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
-        this.cameras.main.startFollow(my.sprite.player, true, 0.25, 0.25); // (target, [,roundPixels][,lerpX][,lerpY])
+        this.cameras.main.startFollow(my.sprite.player, true, 0.25, 0.25); 
         this.cameras.main.setDeadzone(50, 50);
         this.cameras.main.setZoom(this.SCALE);
 
@@ -121,11 +121,10 @@ class Platformer extends Phaser.Scene {
             my.sprite.player.setAccelerationX(-this.ACCELERATION);
             my.sprite.player.resetFlip();
             my.sprite.player.anims.play('walk', true);
-            // particle following code here
+            // Particle following code here
             my.vfx.walking.startFollow(my.sprite.player, my.sprite.player.displayWidth/2-10, my.sprite.player.displayHeight/2-5, false);
             my.vfx.walking.setParticleSpeed(this.PARTICLE_VELOCITY, 0);
 
-            // Only play smoke effect if touching the ground
 
             if (my.sprite.player.body.blocked.down) {
                 my.vfx.walking.start();
@@ -140,9 +139,6 @@ class Platformer extends Phaser.Scene {
             my.vfx.walking.startFollow(my.sprite.player, my.sprite.player.displayWidth/2-10, my.sprite.player.displayHeight/2-5, false);
 
             my.vfx.walking.setParticleSpeed(this.PARTICLE_VELOCITY, 0);
-
-            // Only play smoke effect if touching the ground
-
             if (my.sprite.player.body.blocked.down) {
                 my.vfx.walking.start();
 
@@ -155,12 +151,11 @@ class Platformer extends Phaser.Scene {
             my.sprite.player.setAccelerationX(0);
             my.sprite.player.setDragX(this.DRAG);
             my.sprite.player.anims.play('idle');
-            // have the vfx stop playing
+            // Have the vfx stop playing
             my.vfx.walking.stop();
         }
 
-        // player jump
-        // note that we need body.blocked rather than body.touching b/c the former applies to tilemap tiles and the latter to the "ground"
+        // Player jump
 
         if(!my.sprite.player.body.blocked.down) {
             my.sprite.player.anims.play('jump');

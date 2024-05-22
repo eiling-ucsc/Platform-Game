@@ -1,15 +1,13 @@
-// Jim Whitehead
-// Created: 4/14/2024
+// Eion Ling
+// Created: 5/21/2024
 // Phaser: 3.70.0
 //
-// Cubey
+// Platform Game
 //
-// An example of putting sprites on the screen using Phaser
+// A platformer game using Phaser
 // 
 // Art assets from Kenny Assets "Shape Characters" set:
 // https://kenney.nl/assets/shape-characters
-
-// debug with extreme prejudice
 "use strict"
 
 // game config
@@ -17,7 +15,7 @@ let config = {
     parent: 'phaser-game',
     type: Phaser.CANVAS,
     render: {
-        pixelArt: true  // prevent pixel art from getting blurred when scaled
+        pixelArt: true 
     },
     physics: {
         default: 'arcade',
